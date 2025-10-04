@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .sidebar {
+    display: none !important;
+  }
+  
+  /* Əgər mobil üçün ayrıca sidebar varsa, onu da gizlət */
+  .sidebar-overlay {
+    display: none !important;
+  }
+}

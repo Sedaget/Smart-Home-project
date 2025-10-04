@@ -1,0 +1,165 @@
+.navbar {
+    width: 100%;
+    min-height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid linear;
+    border-radius: 50px;
+    background: rgba(red, green, blue, alpha);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 1px 2px rgb(169, 167, 167);
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 5px;
+}
+.left,
+.searchbox,
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.left h1,
+.right p {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.left h1 {
+    width: 220px;
+    height: 24px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: auto;
+    padding-left: 20px;
+}
+.right p {
+    width: 300px;
+    height: 43px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.searchbox {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex: 2;
+    background: transparent;
+    align-items: center;
+    padding-left: 12px;
+    border-radius: 50px;
+    border: 1px solid linear;
+    box-shadow: 0 2px 5px rgb(36, 36, 36);
+}
+.searchbox input {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+  min-width: 0;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    color: #e5e2e2;
+}
+
+.navbar.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.navbar.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+.hamburger-btn {
+  display: none;
+   background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 10px;
+}
+/* === Responsive Media Queries === */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .searchbox input {
+    font-size: 0.95rem;
+  }
+
+  .left h1,
+  .right p {
+    font-size: 1rem;
+  }
+  .navbar{
+    width: 600px;
+    margin: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 100px;  /* daha uyğun responsive hündürlük */
+    height: auto;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  .left,
+  .right {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .searchbox {
+    flex: 1 1 100%;
+    
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .left h1,
+  .right p {
+    font-size: 0.9rem;
+    width: auto;
+    padding: 0;
+  }
+
+  .searchbox {
+    height: 40px;
+    padding-left: 8px;
+  }
+
+  .searchbox input {
+    font-size: 0.9rem;
+    margin-left: 8px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

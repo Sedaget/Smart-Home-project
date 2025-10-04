@@ -1,0 +1,19 @@
+/* .device, .brightness-box, .ac-box, .camera-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+.brightness-box {
+  width: 260px;
+  height: 115px;
+}
+
+.add-widget {
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+} */

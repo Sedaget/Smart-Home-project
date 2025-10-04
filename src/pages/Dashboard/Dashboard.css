@@ -1,0 +1,138 @@
+.dashboard {
+  min-width: 700px;
+  height: 60px;
+  margin: 20px 0 10px 30px;
+  border: 1px solid none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.room-navbar {
+  min-width: 700px;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-between;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.room-content {
+  width: 1200px;
+  min-height: 900px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.room-tab {
+  padding: 8px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: rgb(243, 237, 237);
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.room-tab:hover {
+  background: rgba(252, 250, 250, 0.33);
+}
+
+.active-room {
+  border: 2px solid none;
+  background-color: rgba(203, 202, 202, 0.526);
+  color: #f0f3f3;
+}
+
+/* ====== Tablet (orta ölçü) ====== */
+@media (max-width: 1024px) {
+  .room-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .room-tab {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .modal {
+    max-width: 300px;
+  }
+}
+
+/* ====== Mobil ====== */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+    width: 300px;
+    min-width: unset;
+    min-height: 120px;
+    margin: 10px;
+    border: 1px solid none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .room-navbar {
+    min-width: unset;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 5px;
+    justify-items: center;
+    align-items: center;
+    
+  }
+.left-panel {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: stretch; 
+  gap: 5px;
+}
+  .room-tab {
+    padding: 8px;
+    font-size: 0.9rem;
+    width: 100px;
+  }
+
+  .room-content {
+    margin-top: 10px;
+    width: 300px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: stretch; 
+  gap: 5px;
+  }
+
+  .modal {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal-buttons button {
+    flex: 1;
+    margin: 0 5px;
+  }
+  .left-panel{
+    width: 300px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: stretch; 
+  gap: 5px;
+  }
+}

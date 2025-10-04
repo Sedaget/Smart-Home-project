@@ -1,0 +1,39 @@
+/* .kidroom-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.left-panel, .center-panel, .right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.left-panel {
+  width: 25%;
+}
+
+.center-panel {
+  width: 35%;
+}
+
+.right-panel {
+  width: 30%;
+}
+
+.device, .weather-box, .brightness-box, .internet-box, .ac-box, .camera-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.add-widget {
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+} */

@@ -1,0 +1,43 @@
+.brightness-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.brightness-value {
+  font-size: 25px;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+}
+
+.brightness-slider {
+   width: 100%;
+  margin-top: 5px;
+  accent-color: #00bfff;
+}
+/* .brightness-container input [type="range"]{
+ 
+} */
+.brightness-slider::-webkit-slider-thumb {
+ -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 2px solid #00aaff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000
+}
+
+.brightness-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 2px solid #00aaff;
+  border-radius: 50%;
+  cursor: pointer;
+}

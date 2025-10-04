@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	max-width: 1200px;
+	min-height: 781px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.center {
+	max-width: 100%;
+	width: 100%;
+	min-height: 900px;
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50px;
+	background: rgba(red, green, blue, alpha);
+	backdrop-filter: blur(15px);
+	box-shadow: 0 2px 5px rgb(36, 36, 36);
+}
+
+.sidebar {
+	width: 96px;
+	height: 307px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	border-radius: 50px;
+	backdrop-filter: blur(15px);
+	box-shadow: 0 1px 2px rgba(56, 55, 55, 1);
+	align-items: center;
+	margin: 10px;
+}
+.mobile-sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* şəffaf qara */
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.mobile-sidebar {
+  width: 250px;
+  background-color: #fff; /* Ağ fonda */
+  padding: 20px;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  overflow-y: auto;
+}
+.sidebar div {
+	width: 60px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 18px;
+}
+
+.navicon {
+	width: 35px;
+	height: 35px;
+	color: rgba(234, 231, 231, 1);
+	align-items: center;
+}
+
+.icon-link {
+	padding: 10px;
+	border-radius: 50px;
+	transition: 0.3s ease;
+}
+
+.icon-link svg {
+	font-size: 30px;
+	color: white;
+}
+
+.icon-link.active {
+	border: 2px solid rgb(165, 164, 164);
+	background-color: rgba(255, 255, 255, 0.1);
+	/* optional */
+}
+
+.main{
+	min-height: auto;
+	
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+	
+	.container {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    width: 100%; 
+	height: 100%;
+    padding: 10px;
+	justify-content: space-between;
+  align-items: stretch;
+  }
+	.sidebar {
+		display: none;
+	}
+  .App {
+    width: 100vw;       
+    min-height: 100vh;      
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-y: auto;
+  }
+  .main{
+	 padding: 50px;
+	 /* width: 100vh; */
+    display: flex;
+    flex-direction: column;   
+	justify-content: flex-start; 
+	align-content: center;   
+    min-height: 2000px;
+	backdrop-filter: blur(10px);
+  }
+  .center {
+    max-width: 80%;
+	width: 80%;
+    height: auto;        
+    min-height: auto;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+	margin-left: 10px;
+    
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+	.container {
+     flex-direction: column; /* div-lər üstdən aşağıya sıralansın */
+    height: 100%;           /* .App div-in hündürlüyünü alır */
+    min-height: 100%;       /* əlavə etibarlılıq üçün */
+    align-items: stretch;
+  }
+  .App {
+    width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-y: auto;
+  }
+
+  .main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+  }
+
+  .center {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+	background: rgba(255, 255, 255, 0.1);
+    min-height: auto;
+    border-radius: 40px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+	overflow: visible; 
+  }
+}

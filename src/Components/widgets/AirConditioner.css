@@ -1,0 +1,76 @@
+.right-container{
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.temp-section .circle {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background: conic-gradient(#00bfff 0% 40%, #ccc 40% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.circle-inner {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #969494;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.mode-buttons {
+    width: 90px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.mode-buttons button {
+    width: 86px;
+    height: 58px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.179);
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.mode-buttons button.active {
+    border: 1px solid #fefefe;
+    background: rgba(251, 251, 251, 0.289);
+}
+
+.fan-speed {
+    width: 190px;
+
+    text-align: center;
+}
+
+.fan-speed input[type="range"] {
+    width: 189px;
+    font-weight: 20px;
+    margin-top: 5px;
+    accent-color: #00bfff;
+}
+
+.fan-values {
+    width: 189px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 5px;
+}

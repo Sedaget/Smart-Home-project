@@ -1,0 +1,15 @@
+.settings-container {
+  padding: 20px;
+  color: #fff;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.setting-section {
+  margin-bottom: 20px;
+  background: rgba(121, 121, 121, 0.444);
+  padding: 15px;
+  border-radius: 10px;
+	box-shadow: 0 2px 5px rgb(36, 36, 36);
+
+}
