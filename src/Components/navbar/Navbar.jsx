@@ -21,7 +21,7 @@ const Navbar = ({ toggleSidebar }) => {
       <input type="text" className="search" placeholder={t("Search")}></input>
     </div>
     <div className="right">
-      <p>10:00 AM Sunday, 13 sept 2025</p>
+      <p>10:00 AM Sunday, <br />13 sept 2025</p>
     </div>
 
     </nav>

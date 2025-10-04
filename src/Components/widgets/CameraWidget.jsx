@@ -3,18 +3,19 @@ import './CameraWidget.css';
 
 
 
-const CameraWidget = () => {
-  const [selectedCamera, setSelectedCamera] = useState('Camera 01');
-
+const CameraWidget = ({ selectedCamera, setSelectedCamera }) => {
   return (
-      <div className="card-header">
-        <select value={selectedCamera} onChange={(e) => setSelectedCamera(e.target.value)}>
-          <option>Camera 01</option>
-          <option>Camera 02</option>
-          <option>Camera 03</option>
-        </select>
-        <span className="live-badge">🔴 Live</span>
-      </div>
+    <div className="card-header">
+      <select 
+        value={selectedCamera} 
+        onChange={(e) => setSelectedCamera(e.target.value)}
+      >
+        <option value="Camera01">Camera 01</option>
+        <option value="Camera02">Camera 02</option>
+        <option value="Camera03">Camera 03</option>
+      </select>
+      <span className="live-badge">🔴 Live</span>
+    </div>
   );
 };
 

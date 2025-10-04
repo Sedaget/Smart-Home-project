@@ -12,8 +12,11 @@ import AC from '../../Components/devices/AC';
 import SpeakerCard from '../../Components/devices/SpeakerCard';
 import WifiRouterCard from '../../Components/devices/WifiRouterCard';
 import { useTranslation } from 'react-i18next';
+import Image13 from '../../assets/images/image2.webp';
+import Image14 from  '../../assets/images/image3.jpeg'
 
 const LivingRoom = () => {
+     const [selectedCamera, setSelectedCamera] = useState('Camera01')
     const [showModal, setShowModal] = useState(false);
     const [newDevice, setNewDevice] = useState('');
     const [devices, setDevices] = useState([]);
@@ -33,6 +36,11 @@ const LivingRoom = () => {
         // işığı söndürmək üçün lojiq...
         addNotification("Living Room: Lights turned off", "energy");
     };
+    const cameraImages = {
+    Camera01: Image6,
+    Camera02: Image13,
+    Camera03: Image14
+  };
 
     return (
         <div className='panel'>
@@ -43,8 +51,11 @@ const LivingRoom = () => {
                 <div className="ac-box">
                     <AirConditionerCard />
                 </div>
-                <div className="camera-box" style={{ backgroundImage: `url(${Image6})` }}>
-                    <CameraWidget />
+                <div className="camera-box" style={{ backgroundImage: `url(${cameraImages[selectedCamera]})`,backgroundSize: 'cover', backgroundPosition: 'center', transition: 'background-image 0.3s ease-in-out' }}>
+                    <CameraWidget
+        selectedCamera={selectedCamera}
+        setSelectedCamera={setSelectedCamera}
+      />
                 </div>
             </div>
 

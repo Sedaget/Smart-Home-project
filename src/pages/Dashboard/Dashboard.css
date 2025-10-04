@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+  color: rgb(147, 147, 147);
 }
 
 .room-navbar {
@@ -19,6 +20,8 @@
   justify-content: space-between;
   border: 2px solid transparent;
   transition: 0.3s ease;
+  color: rgb(123, 121, 121);
+  text-shadow: #f0f3f3;
 }
 
 .room-content {

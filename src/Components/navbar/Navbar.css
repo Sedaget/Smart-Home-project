@@ -23,10 +23,7 @@
 }
 .left h1,
 .right p {
-  font-size: 1.2rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 1rem;
 }
 .left h1 {
     width: 220px;
@@ -41,8 +38,7 @@
     height: 43px;
     color: #ffffff;
     font-size: 1.5rem;
-    text-align: center;
-    
+    text-align: right;
 }
 .searchbox {
     width: 100%;
