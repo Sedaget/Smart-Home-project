@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([
-    {id: 1, message:"New devices added", time:"today", read: false, type:"system"},
-    {id: 2, message:"Motion detected", time:"today", read: false, type:"security"},
-    {id: 3, message:"Internet disconnected", time:"today", read: true, type:"system"},
-    {id: 4, message:"temperature is above 30°C", time:"today", read: true, type:"energy"}
+    {id: 1, message:"Newdevicesadded", time:"today", read: false, type:"system"},
+    {id: 2, message:"motiondetected", time:"today", read: false, type:"security"},
+    {id: 3, message:"internetdisconnected", time:"today", read: true, type:"system"},
+    {id: 4, message:"temperatureabove30", time:"today", read: true, type:"energy"}
   ]);
   const markAsRead=(id)=>{
     setNotifications(prev=>
@@ -26,12 +26,12 @@ const { t } = useTranslation();
       <ul className='notification-list'>
         {notifications.map(n=>(
           <li key={n.id} className={`notification-item ${n.read? 'read':'unread'}`}>
-            <div>
-              <p>{n.message}</p>
-              <span>{n.time}</span>
+            <div className='message'>
+              <p>{t(n.message)}</p>
+              <span>{t(n.time)}</span>
             </div>
             {!n.read &&(
-              <button onClick={()=> markAsRead(n.id)}>Mark as read</button>
+              <button onClick={()=> markAsRead(n.id)} style={{fontFamily: "sans-serif", fontSize:"1.2rem"}}>{t('Read')}</button>
             )}
           </li>
         ))}

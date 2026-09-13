@@ -31,7 +31,7 @@ const Analytics = () => {
       <div className="room-stats" style={{ color: 'black', padding: '10px', width:'300px' }}>
         <h3>Seçilmiş Otaqların Statistikası:</h3>
         {roomData.map(room => (
-          <div key={room.id} className="stat-card" style={{ border: '1px solid #ccc', padding: '10px', marginBottom: '10px' }}>
+          <div key={room.id} className="stat-card" style={{ border: '1px solid #ccc', padding: '10px', marginBottom: '10px', fontFamily:"sans-serif",fontSize:"1.2rem", color:"white" }}>
             <h4>{room.name}</h4>
             <p>Enerji: {room.energy} kWh</p>
             <p>Cihaz sayı: {room.devices}</p>

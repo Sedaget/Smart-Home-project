@@ -18,7 +18,7 @@ const Settings = () => {
 
       <div className="setting-section">
         <h3>{t('language')}</h3>
-        <select value={i18n.language} onChange={(e) => changeLanguage(e.target.value)}>
+        <select style={{fontFamily:"sans-serif", fontSize:"1.2rem"}} value={i18n.language} onChange={(e) => changeLanguage(e.target.value)}>
           <option value="en">English</option>
           <option value="az">Azərbaycan dili</option>
         </select>

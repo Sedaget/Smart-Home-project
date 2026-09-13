@@ -42,10 +42,10 @@ const Dashboard = () => {
         {showModal && (
         <div className="modal-backdrop">
           <div className="modal">
-            <h3>Add New Room</h3>
+            <h3>{t('AddNewRoom')}</h3>
             <input
               type="text"
-              placeholder="Enter room name"
+              placeholder={t('Enterroomname')}
               value={newRoom}
               onChange={(e) => setNewRoom(e.target.value)}
             />

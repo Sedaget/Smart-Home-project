@@ -54,6 +54,78 @@
   background-color: rgba(203, 202, 202, 0.526);
   color: #f0f3f3;
 }
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(135, 135, 135, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.modal {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: rgb(18, 18, 18);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.modal input {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(219, 217, 217, 0.2);
+  color: #fff;
+  box-shadow:  0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-buttons button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #45a049;
+}
+
+.modal-buttons button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #da190b;
+}
 
 /* ====== Tablet (orta ölçü) ====== */
 @media (max-width: 1024px) {
